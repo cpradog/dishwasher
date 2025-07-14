@@ -1,5 +1,11 @@
 const std = @import("std");
 
+pub const Scanner = @import("src/Scanner.zig");
+pub const Populate = @import("src/populate.zig").Populate;
+
+pub const parse = @import("src/parse.zig");
+pub const populate = @import("src/populate.zig");
+
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
